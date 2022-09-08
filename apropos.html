@@ -1,0 +1,282 @@
+<!--Author : Prevost Melvin-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propos - River's Pub</title>
+
+    <!--Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--Script bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link href="CSS/apropos.css" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="photos/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="photos/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="photos/favicon/favicon-16x16.png">
+    <link rel="manifest" href="photos/favicon/site.webmanifest">
+
+    <!--CSS Animated (Scrolling effect IMAGE et Texte)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+    <!--Icon Bootstrap/Fontawesome-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+
+    <!--Script WOW (Scrolling effect IMAGE & Texte par exemple)-->
+    <script src="JS/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!--CSS & Script pour le carousel-->
+    <link href="CSS/splide.min.css" rel="stylesheet">
+    <script src="JS/splide.min.js"></script>
+
+    <!--Script Lax (Scrolling effect TEXTE)-->
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+
+</head>
+<body>
+        <!--Navbar 2.0-->
+        <div class="container-fluid p-0">
+            <nav class="menu navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="photos/logo.png" alt="Logo River's Pub" id="logo" class="d-inline-block">
+                </a>
+                <button 
+                    class="menuMob navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#toggleMobileMenu" 
+                    aria-controls="toggleMobileMenu" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                
+                    <ul class="navbar-nav ms-auto text-center">
+                        
+                        <li>
+                            <a class="nav-link text-dark accueil-nav onglet" href="index.html">Accueil</a>
+                        </li>
+
+                        <li>
+                            <a class="nav-link text-dark onglet reservation-nav" href="reservation.html">Reservation</a>
+                        </li>
+                        <li>
+                            <a class="nav-link text-dark onglet carte-nav" href="menu.html">La carte</a>
+                        </li>
+                        <li>
+                            <a class="nav-link text-dark onglet apropos-nav" href="apropos.html">A propos</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          </div>
+
+          <!--Partie 1-->
+          <div class="container-fluid pt-3">
+            <div class="row justify-content-center">
+          
+              <div class="col-md-6 texte">
+                <h1 class="titreLeRivers lax lax_preset_fadeInOut:179.5:0 lax_preset_scaleInOut:179.5:0.6">Le River's Pub</h1>
+                <p class="pLeRivers">Comme tout pub anglais, le River's Pub propose un large choix de bières, mais pas que... Une grande variété de boissons fraiches ou chaudes, une sélection de spiritueux ou bien de nombreux cocktails</p>
+              </div>
+
+              <div class="col-md-5">
+                <img src="photos/apropos1.JPEG" class="w-100 wow animate__animated animate__bounceInRight animate__slow" alt="Etage voiture">
+              </div>         
+            </div>
+          </div>
+
+          <!--Partie 2-->
+          
+          <div class="container-fluid pt-3">
+            <div class="row justify-content-center flex-wrap-reverse">
+          
+              <div class="col-md-5">
+                <img src="photos/apropos2.JPEG" class="w-100 wow animate__animated animate__bounceInLeft animate__slow" alt="Salle du bas">
+              </div>
+
+              <div class="col-md-6 texte">
+                <h1 class="titreLaCarte lax lax_preset_fadeInOut:179.5:0 lax_preset_scaleInOut:179.5:0.6">Nos spécialités</h1>
+                <p class="pLaCarte">Petite ou grande faim ? Pas de problème ! Vous trouverez à la carte, nos spécialités d'origine Anglaise telles que le Fish & Chips ou encore notre Welsh River's ! Du traditionnel !</p>
+              </div>         
+            </div>
+          </div>
+
+          <!--Partie 3-->
+          
+          <div class="container-fluid pt-3">
+            <div class="row justify-content-center">
+          
+              <div class="col-md-6 texte">
+                <h1 class="titreActivites lax lax_preset_fadeInOut:179.5:0 lax_preset_scaleInOut:179.5:0.6">Activités</h1>
+                <p class="pActivites">Une envie de jouer ? Nous mettons à votre disposition à l'étage 3 jeux de fléchettes ainsi que 3 billards.<br>Happy Hour du lundi au vendredi de 17 h à 19 h !<br>Des rendez-vous sportifs et des concerts !</p>
+              </div>
+
+              <div class="col-md-5">
+                <img src="photos/apropos3.JPEG" class="w-100 wow animate__animated animate__bounceInRight animate__slow" alt="">
+              </div>         
+            </div>
+          </div>
+
+          <!--Partie 4-->
+          <div class="container-fluid pt-3 pb-5">
+              <div class="row justify-content-center flex-wrap-reverse">
+                  <div class="col-md-5">
+                      <!--Carousel avec Splide-->
+                      <section class="splide carousel m-auto wow animate__animated animate__bounceInLeft animate__slow " aria-label="Carousel photos River's Pub" style="z-index: 0;">
+                        <div class="splide__track">
+                              <ul class="splide__list">
+                                  <li class="splide__slide"><figure><img class="d-block w-100" src="photos/avis1.png" alt="First slide"></figure><figcaption style="font-size: calc(16*var(--res)); ;">© TheFork</figcaption></li>
+                                  <li class="splide__slide"><figure><img class="d-block w-100" src="photos/avis2.png" alt="Second slide"></figure><figcaption style="font-size: calc(16*var(--res)); ;">© TheFork</figcaption></li>
+                                  <li class="splide__slide"><figure><img class="d-block w-100" src="photos/avis3.png" alt="Third slide"></figure><figcaption style="font-size: calc(16*var(--res)); ;">© TheFork</figcaption></li>
+                                  <li class="splide__slide"><figure><img class="d-block w-100" src="photos/avis4.png" alt="Fourth slide"></figure><figcaption style="font-size: calc(16*var(--res)); ;">© TheFork</figcaption></li>
+                              </ul>
+                        </div>
+                      </section>
+                      <script>
+                        var splide = new Splide( '.splide', {
+                        type    : 'loop',
+                        perPage : 1,
+                        autoplay: true,
+                        arrows: false,
+                        speed: number = 500,
+                        } );
+
+                        splide.mount();
+                      </script>
+                  </div>
+                  <div class="col-md-6 texte">
+                      <h1 class="titreAvis lax lax_preset_fadeInOut:179.5:0 lax_preset_scaleInOut:179.5:0.6">Ils ont aimé !</h1>
+                      <p class="pAvis">Voici quelques témoignages de nos clients qui sont venus passer du bon temps au River's Pub !</p>
+                  </div>
+              </div>
+          </div>
+          
+        <!--FOOTER-->
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+        <div class="piedPage mt-4">
+
+            <footer class="bg-white text-center text-lg-start text-dark">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row mt-4">
+                <!--Grid column-->
+                <div class="col-lg col-md-6 mb-4 mb-md-0 text-center">
+                    <h5 class="text-uppercase">Nous contacter</h5>
+        
+                    <ul class="list-unstyled mb-0">
+                    <li>
+                        <i class="fas fa-phone fa-fw fa-sm me-2"></i>02 78 77 09 99
+                    </li>
+                    <li>
+                        <a href="mailto:riverspub@contact.com" class="text-dark"><i class="fas fa-at fa-fw fa-sm me-2"></i>contact@riverspub.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-user-edit fa-fw fa-sm me-2"></i>107 Quai Jean de Béthancourt
+                    </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-lg col-md-6 mb-4 mb-md-0 text-center">
+                    <h5 class="text-uppercase">Horaires</h5>
+        
+                    <ul class="list-unstyled">
+                    <li>
+                        <i class="fas fa-check fa-fw fa-sm me-2"></i>Lun 10:30 - 00:00
+                    </li>
+                    <li>
+                        <i class="fas fa-check fa-fw fa-sm me-2"></i>Mar 10:30 - 00:00
+                    </li>
+                    <li>
+                        <i class="fas fa-check fa-fw fa-sm me-2"></i>Mer 10:30 - 00:00
+                    </li>
+                    <li>
+                        <i class="fas fa-check fa-fw fa-sm me-2"></i>Jeu 10:30 - 00:00
+                    </li>
+                    <li>
+                        <i class="fas fa-check fa-fw fa-sm me-2"></i>Ven 10:30 - 00:00
+                    </li>
+                    <li>
+                        <i class="fas fa-check fa-fw fa-sm me-2"></i>Sam 14:00 - 01:00
+                    </li>
+                    <li>
+                        <i class="fas fa-times fa-fw fa-sm me-2"></i>Dim Fermé
+                    </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-lg col-md-6 mb-4 mb-md-0 text-center">
+                    <h5 class="text-uppercase">Nos réseaux</h5>
+        
+                    <ul class="list-unstyled">
+                    <li>
+                        <a href="https://www.facebook.com/riverspub/" target="_blank" class="text-dark"><i class="fab fa-facebook fa-fw fa-sm me-2"></i>Facebook/RiversPub</a>
+                    </li>
+                    <li>
+                        <a href="https://www.tripadvisor.com/Restaurant_Review-g187191-d13821049-Reviews-River_s_Pub-Rouen_Seine_Maritime_Haute_Normandie_Normandy.html" target="_blank" class="text-dark"><img src="photos/tripadvisor.svg" alt="icone tripadvisor" style="width: 20px;" class="fa-fw me-2">Tripadvisor/RiversPub</a>
+                    </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!-- Grid container -->
+        
+            <!-- Copyright -->
+            <div class="text-center p-3 bg-white">
+                © <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                    </script> Copyright:
+                <a class="text-dark" href="#">River's Pub</a> - <a href="mentionslégales.html" class="text-dark">Mentions légales</a>
+            </div>
+            <!-- Copyright -->
+            </footer>
+        
+        </div>
+        <!-- FIN FOOTER -->
+
+        <!-- Active le plugin lax -->
+        <script>
+            window.onload = function () {
+            lax.init()
+  
+            // Add a driver that we use to control our animations
+            lax.addDriver('scrollY', function () {
+                return window.scrollY
+            })
+  
+            // Add animation bindings to elements
+            lax.addElements('.selector', {
+                scrollY: {
+                translateX: [
+                    ["elInY", "elCenterY", "elOutY"],
+                    [0, 'screenWidth/2', 'screenWidth'],
+                ]
+                }
+            })
+            }
+        </script>
+
+        <!-- Ouverture menu mobile -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+</body>
+</html>

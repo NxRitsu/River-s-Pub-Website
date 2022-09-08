@@ -1,54 +1,73 @@
 <!--Author : Prevost Melvin-->
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr">  
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Accueil - River's Pub</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link href="CSS/style.css" rel="stylesheet">
+        <title>Reservation - River's Pub</title>
+        <link href="CSS/reservation.css" rel="stylesheet">
 
         <!--Favicon-->
         <link rel="apple-touch-icon" sizes="180x180" href="photos/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="photos/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="photos/favicon/favicon-16x16.png">
-        <link rel="manifest" href="photos/favicon/site.webmanifest">        
+        <link rel="manifest" href="photos/favicon/site.webmanifest">         
 
-        <!--Icon Bootstrap/Fontawesome-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
-
-        <!--CSS Animated-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
-        <!--CSS & Script pour le carousel-->
-        <link href="CSS/splide.min.css" rel="stylesheet">
-        <script src="JS/splide.min.js"></script>
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
         <!--Script bootstrap-->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
 
-        <!--Script Stellar (Effet parallax)-->
-        <script src="JS/jquery-2.0.2.js"></script>
-        <script src="JS/jquery.stellar.min.js"></script>
+        <!--Icon Bootstrap/Fontawesome-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>  
 
-        <!--Script Lax (Scrolling effect TEXTE)-->
-        <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
-
-        <!--Script WOW (Scrolling effect IMAGE par exemple)-->
+        <!--CSS Animated (Scrolling effect IMAGE et Texte)-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        
+        <!--Script WOW (Scrolling effect IMAGE & Texte par exemple)-->
         <script src="JS/wow.js"></script>
         <script>
             new WOW().init();
         </script>
-        
-    </head>
+            
+        <!--Css du widget TheFork-->
+        <style type="text/css">
 
+            .thefork{
+            width: 100%;
+            border:none;
+            overflow: scroll;
+            }
+
+        /* Media queries widget */ 
+            @media only screen and (max-width : 320px) { 
+                .thefork{
+                min-height: 840px;
+                }
+            }
+            @media only screen and (min-width : 321px) and (max-width : 516px){
+                .thefork{
+                min-height: 650px; 
+                }
+            }
+            @media only screen and (min-width : 517px) { 
+                .thefork{
+                min-height: 550px; 
+                }
+            }
+        </style>
+
+    </head>
     <body>
+        
         <!--Navbar 2.0-->
-        <div class="container-fluid p-0 sticky-top">
+        <div class="container-fluid p-0">
             <nav class="menu navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="index.html">
                     <img src="photos/logo.png" alt="Logo River's Pub" id="logo" class="d-inline-block">
@@ -73,7 +92,7 @@
                         </li>
 
                         <li>
-                            <a class="nav-link text-dark onglet reservation-nav" href="reservation.html">Réservation</a>
+                            <a class="nav-link text-dark onglet reservation-nav" href="reservation.html">Reservation</a>
                         </li>
                         <li>
                             <a class="nav-link text-dark onglet carte-nav" href="menu.html">La carte</a>
@@ -86,104 +105,15 @@
             </nav>
           </div>
 
-        <!--Home-->
-        <section class="accueil d-flex w-100 h-100 flex-column justify-content-center align-items-center" data-stellar-background-ratio="0.5">
-            <h1 class="titreRivers text-center animate__animated animate__backInDown animate__fast px-3">River's Pub</h1>
-            <p class="pRivers display-4 text-center animate__animated animate__fadeInUpBig animate__fast">Restaurant / Pub Anglais</p>
-        </section>        
-
-        <!--Grille responsive "Pub Anglais Situé à Rouen"-->
-        <div class="container-fluid pt-3 pb-3">
-
-            <!--Texte "Pub Anglais situé à Rouen"-->
-            <h2 class="titrePubAnglais text-center lax lax_preset_fadeInOut:179.5:0 lax_preset_scaleInOut:179.5:0.6">Pub Anglais</h2>
-            <p class="pSitueRouen text-center">Situé à Rouen</h1>
-            
-            <!--Wow (https://www.delac.io/WOW/docs.html) permet de faire apparaitre au moment du scroll, et animate.css permet de faire l'anim (animate.style)-->
-            <div class="row wow animate__animated animate__bounceInLeft animate__slow">
-                <!--1ère photo-->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-4 shadow-sm">
-                        <img src="photos/photo1.JPEG" alt="Salle du bas" class="w-100 hover-shadow">
-                    </div>
-                </div>
-
-                <!--2ème photo-->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-4 shadow-sm">
-                        <img src="photos/photo4.JPEG" alt="Salle du bas, du haut" class="w-100">
-                    </div>
-                </div>
-
-                <!--3ème photo-->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-4 shadow-sm">
-                        <img src="photos/photo3.JPEG" alt="Salle du haut" class="w-100">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!--Bouton Réserver-->
-                <div class="col- text-center">
-                    <a href="reservation.html" class="btn bouton btn-secondary ">Réserver</a> 
-                </div>
-            </div>
+        <div class="container-fluid pt-3 pb-5">
+            <h1 class="titreReserv text-center animate__animated animate__bounceIn animate__slow">Réservation en ligne</h1>
+            <p class="p1 text-center">Pour votre confort, vous avez la possibilité de réserver une table en ligne, il suffit de remplir ce formulaire ci-dessous :</p>
+            <iframe class="thefork embed-responsive-item wow animate__animated animate__fadeInUp animate__fast" src="https://module.lafourchette.com/fr_FR/module/374133-e5876 "></iframe>
+            <p class="p1 text-center">Vous pouvez aussi réserver en nous appelant : <b>02 78 77 09 99</b></p> 
+            <p class="p1 text-center">Merci pour votre réservation !</p>
+            <p class="p2 text-center py-0">Si le formulaire de réservation ne s’affiche pas, veuillez recharger la page ou <a href=" https://module.lafourchette.com/fr_FR/module/374133-e5876 " target="_blank" rel="noopener">cliquez ici</a>.</p>
         </div>
-
-        <!--Grille responsive "Où nous trouver ?"-->
-        <!--Containe avec un padding bottom-->
-        <div class="container-fluid pb-3">
-            <h2 class="titreOuTrouver text-center pt-2 lax lax_preset_fadeInOut:179.5:0 lax_preset_scaleInOut:179.5:0.6">Où nous trouver ?</h2>
-            <p class="pAdresse text-center">107 Quai Jean de Béthancourt</h1>
-                <!--Map google-->
-            <div class="row">
-                <div class="col-">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="mapGoogle embed-responsive-item wow animate__animated animate__fadeIn animate__slower" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.300221836385!2d1.0706574155879836!3d49.44104247934887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0de09c3b4c5a9%3A0xf4636059e116d5d2!2sRiver&#39;s%20Pub!5e0!3m2!1sfr!2sfr!4v1647900974704!5m2!1sfr!2sfr" width="100%" height="450" marginheight="500" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>  
-            </div>
-        </div>
-
-        <div class="container-fluid pb-3">
-            <h2 class="titreConcert lax lax_preset_fadeInOut:179.5:0 lax_preset_scaleInOut:179.5:0.6 text-center">Un avant / après concert ?</h2>
-            <p class="pConcert text-center">Le River's Pub est situé à proximité de la salle de concert "Le 106", nous serons ravis de vous recevoir après ou avant votre concert !</p>
-            <div class="row">
-                <div class="col- ">
-                      <!--Carousel avec Splide-->
-                      <section class="splide carousel m-auto wow animate__animated animate__bounceInLeft animate__slow " aria-label="Carousel photos River's Pub" style="z-index: 0;">
-                        <div class="splide__track">
-                              <ul class="splide__list">
-                                  <li class="splide__slide"><figure><img class="d-block w-100" src="photos/concert4.jpg" alt="First slide"></figure><figcaption style="font-size: calc(16*var(--res)); ;">© Rouen Normandie Tourisme & Congrès</figcaption></li>
-                                  <li class="splide__slide"><img class="d-block w-100" src="photos/concert2.JPEG" alt="Second slide"></li>
-                                  <li class="splide__slide"><img class="d-block w-100" src="photos/concert3.JPEG" alt="Third slide"></li>
-                                  <li class="splide__slide"><img class="d-block w-100" src="photos/concert1.JPEG" alt="Fourth slide"></li>
-                              </ul>
-                        </div>
-                      </section>
-                      <script>
-                          var splide = new Splide( '.splide', {
-                             type  : 'fade',
-                            rewind: true,
-                         } );
-
-                        splide.mount();
-                      </script>
-                </div>
-            </div>
-        </div>
-
-        <!--Evenements à venir-->
-        <div class="container-fluid pb-5">
-            <h2 class="titreAgenda text-center lax lax_preset_fadeInOut:179.5:0 lax_preset_scaleInOut:179.5:0.6">Événements à venir</h2>
-            <p class="pAgenda text-center">Le River's Pub retransmis des événements sportifs et accueil des concerts, tenez vous au courant en cliquant sur ce bouton !</p>
-            <div class="row">
-                <div class="col- text-center">
-                    <a href="https://www.facebook.com/riverspub/events" class="btn bouton btn-secondary" target="_blank">Agenda</a> 
-                </div>
-            </div>
-        </div>
-
+        
         <!--FOOTER-->
         <!-- Remove the container if you want to extend the Footer to full width. -->
         <div class="piedPage">
@@ -262,15 +192,15 @@
             <div class="text-center p-3 bg-white">
                 © <script type="text/javascript">
                     document.write(new Date().getFullYear());
-                    </script> Copyright:
+                    </script>  Copyright:
                 <a class="text-dark" href="#">River's Pub</a> - <a href="mentionslégales.html" class="text-dark">Mentions légales</a>
             </div>
             <!-- Copyright -->
             </footer>
         
         </div>
-        <!-- FIN FOOTER -->        
-        
+        <!-- FIN FOOTER -->
+
         <!-- Active le plugin lax -->
         <script>
             window.onload = function () {
@@ -293,14 +223,8 @@
             }
         </script>
 
-        <!--Active le pluging stellar-->
-        <script>
-            $.stellar();
-            if(!window.is_mobile) {
-        $(window).stellar();
-    }
-        </script>
         <!-- Ouverture menu mobile -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+         
     </body>
 </html>
