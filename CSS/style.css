@@ -1,0 +1,227 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*SCROLLBAR*/
+
+::-webkit-scrollbar {									/* Scrollbars */
+	width: 14px;
+	height: 10px;
+	background: transparent;
+}
+
+::-webkit-scrollbar-track-piece {						/* Fond */
+	background: transparent none;
+	border: solid 4px transparent;	
+	margin-left: 0px;
+}
+
+::-webkit-scrollbar-thumb {								/* Barre */
+	border: solid 0 transparent;
+	border-right-width: 4px;
+	border-radius: 5px;
+	border-top-right-radius: 9px 5px;
+	border-bottom-right-radius: 9px 5px;
+	box-shadow: inset 0 0 0 1px rgb(79,79,79), inset 0 0 0 6px rgb(102,102,102);
+}
+::-webkit-scrollbar-thumb:hover {						/* Barre */
+	box-shadow: inset 0 0 0 1px rgb(90,90,90), inset 0 0 0 6px rgb(110,110,110);
+}
+
+/*FIN SCROLLBAR*/
+
+html{
+    --res: calc(0.01 * 10vmin);
+}
+
+
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url(../Font/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: 'Neoteric';
+    src: url(../Font/neoteric.ttf);
+}
+
+@font-face {
+    font-family: 'Mochary';
+    src: url(../Font/Mochary.ttf);
+}
+
+/*Menu*/
+
+@media screen and (max-width: 768px) {
+    #logo{
+        width: 90px;
+    }
+}
+
+.menu a{
+    font-family: 'CaviarDreams';
+    text-decoration: none;
+    font-size: large;
+    margin-right: 10px;
+}
+
+.menu{
+    width:100%; 
+    z-index: 20;
+    border-bottom: 1px solid #c10000;
+    background-color: rgb(255, 255, 255);
+    align-items: center ;
+}
+
+
+#logo{
+    max-width: 120px;
+    height:auto;
+    margin: auto;
+}
+
+.menuMob{
+    margin-right: 10px;
+}
+
+/*Border current page*/
+.accueil-nav:after{
+    display:block;
+    content: '';
+    border-bottom: 2px solid #c10000;
+}
+
+.accueil-nav:hover:after{
+    transform: scaleX(1);
+}
+
+/*Anim border autres onglets*/
+.reservation-nav:after, .carte-nav:after, .apropos-nav:after{
+    display: block;
+    content: '';
+    border-bottom: 2px solid #c10000;
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.reservation-nav:hover:after, .carte-nav:hover:after, .apropos-nav:hover:after{
+    transform: scaleX(1);
+}
+
+body{
+    height: 100vh;
+}
+
+.accueil{
+    background:url(../photos/bar2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    position: sticky;
+    text-shadow: 0px 2px 0px #C10000;
+}
+
+.titreRivers{
+    font-family: 'Mochary';
+    color: #c10000;
+    text-shadow: 0px 0px 12px rgb(255, 255, 255);
+    /*font-size: 130px;*/
+    font-size: calc(250*var(--res));
+    --animate-duration: 1.5s;
+}
+
+.pRivers{
+    color: white;
+    text-shadow: 0px 0px 12px #c10000;
+    font-size: calc(80*var(--res));
+    font-family: 'CaviarDreams';
+    --animate-duration: 1.5s;
+}
+
+.titrePubAnglais{
+    font-family: 'Mochary'; 
+    /*font-size: 6.3vw;*/
+    font-size: calc(125*var(--res)); 
+    color:#c10000;
+    text-shadow: 0px 0px 12px rgba(0,0,0,0.57);
+}
+
+.pSitueRouen{
+    font-family: 'CaviarDreams'; 
+    /*font-size: 2.5vw;*/
+    font-size: calc(32*var(--res));
+}
+
+.titreOuTrouver{
+    font-family: 'Mochary'; 
+    font-size: calc(125*var(--res)); 
+    color:#c10000;
+    text-shadow: 0px 0px 12px rgba(0,0,0,0.57);
+}
+
+.pAdresse{
+    font-family: 'CaviarDreams';
+    font-size: calc(32*var(--res)); 
+}
+
+.mapGoogle{
+    border:3px solid #c10000;
+}
+
+.titreConcert{
+    font-family: 'Mochary';
+    color: #c10000;
+    font-size: calc(125*var(--res)); 
+    text-shadow: 0px 0px 12px rgba(0,0,0,0.57);
+}
+
+.pConcert{
+    font-family: 'CaviarDreams';
+    font-size: calc(32*var(--res)); 
+}
+
+.carousel{
+    width: calc(900*var(--res)); 
+}
+
+/*Bouton "Réserver"*/
+
+.bouton:hover{
+    background-color: #c10000;
+    border: #c10000 1px solid;
+}
+
+.bouton{
+    background-color: rgb(51, 51, 51);
+    border: black 1px solid;
+    font-size: calc(32*var(--res)); 
+    font-family: 'CaviarDreams';
+}
+
+.precedant{
+    width: 5%;
+}
+
+.suivant{
+    width: 5%;
+}
+
+.titreAgenda{
+    font-family: 'Mochary';
+    color: #c10000;
+    font-size: calc(125*var(--res)); 
+    text-shadow: 0px 0px 12px rgba(0,0,0,0.57);
+}
+
+.pAgenda{
+    font-family: 'CaviarDreams';
+    font-size: calc(32*var(--res)); 
+}
+
+/*Footer*/
+
+footer{
+    border-top : #c10000 dashed 1px;
+}
