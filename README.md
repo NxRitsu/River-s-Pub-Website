@@ -29,7 +29,7 @@ Le projet de refonte du site a été réalisé en utilisant les technologies sui
 
 ## WEB version 🌐
 
-Le site est en live ici 👉 [River's Pub](https://nxritsu.github.io/River-s-pub-website/index.html)
+Le site est en live ici 👉 [River's Pub](https://nxritsu.github.io/River-s-Pub-Website/index.html)
 ## Contact ✉️
 
 Si vous avez des questions ou des suggestions concernant le projet de refonte du site du restaurant "River's Pub", n'hésitez pas à me contacter. Vous pouvez me joindre via mon adresse e-mail : melvinlh76@gmail.com.
