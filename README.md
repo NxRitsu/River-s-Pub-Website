@@ -1,8 +1,8 @@
-# Refonte du site du restaurant "River's Pub"
+# Refonte du site du restaurant "River's Pub" 🍴
 
-Ce dépôt contient le projet de refonte du site internet du restaurant "River's Pub" situé à Rouen, réalisé dans le cadre de mon stage de première année de BTS SIO. Vous pouvez le consulter en ligne à l'adresse suivante : [nxritsu.github.io/River-sPub](https://nxritsu.github.io/River-s-pub-website/index.html).
+Ce dépôt contient le projet de refonte du site internet du restaurant "River's Pub" situé à Rouen, réalisé dans le cadre de mon stage de première année de BTS SIO.
 
-## Contenu
+## Contenu 🧬
 
 Le projet de refonte du site comprend les éléments suivants :
 
@@ -11,7 +11,7 @@ Le projet de refonte du site comprend les éléments suivants :
 - **Développement** : Le code source du site.
 - **Ressources** : Les ressources supplémentaires utilisées pour le projet, telles que les images, les polices de caractères, etc.
 
-## Fonctionnalités principales
+## Fonctionnalités principales ⚙️
 
 Le site refondu du restaurant "River's Pub" présente les fonctionnalités suivantes :
 
@@ -19,7 +19,7 @@ Le site refondu du restaurant "River's Pub" présente les fonctionnalités suiva
 - Informations détaillées sur le restaurant, y compris le menu, les événements à venir, les horaires d'ouverture, etc.
 - Formulaire de réservation en ligne permettant aux clients de réserver une table.
 
-## Technologies utilisées
+## Technologies utilisées 👨‍💻
 
 Le projet de refonte du site a été réalisé en utilisant les technologies suivantes : <br>
 
@@ -27,8 +27,14 @@ Le projet de refonte du site a été réalisé en utilisant les technologies sui
 <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
 
-## Contact
+## WEB version 🌐
+
+Le site est en live ici 👉 [portfolio](https://nxritsu.github.io/River-s-pub-website/index.html)
+## Contact ✉️
 
 Si vous avez des questions ou des suggestions concernant le projet de refonte du site du restaurant "River's Pub", n'hésitez pas à me contacter. Vous pouvez me joindre via mon adresse e-mail : melvinlh76@gmail.com.
 
 Merci d'avoir consulté le projet de refonte du site du restaurant "River's Pub" ! 😊🍻
+
+## Crédit 🔗
+[Prévost Melvin](https://github.com/NxRitsu)
